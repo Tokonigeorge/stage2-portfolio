@@ -89,6 +89,10 @@ body{
     height: 125vh;
 }
 
+.container-four{
+    margin-top: 0;
+}
+
 button{
     margin-top: 1rem;
     padding: 0.5em 1em;
@@ -106,7 +110,7 @@ img{
 }
 
 .input-field{
-    height: 70vh;
+    height: 60vh;
     align-items: center;
     justify-content: center;
 }
@@ -119,6 +123,19 @@ img{
     .align-items-end p{
         font-size: 2.5rem;
     }
+
+    .align-items-end{
+        height: 70vh;
+    }
+
+    .container-three{
+        height: 85vh;
+    }
+
+    .input-field{
+        height: 50vh; 
+   }
+
 }
 
 @media (max-width: 500px) {
@@ -137,6 +154,10 @@ img{
 
     .container-three{
         height: 75vh;
+    }
+
+    .container-four{
+        margin-top: 30px;
     }
 
     .input-field{
