@@ -1,0 +1,135 @@
+:root{
+    font-size: calc(0.6vw + 0.4em);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FCF1F2;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    min-height: 400vh;
+    overflow-x: hidden;
+}
+
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+
+.rotate-text{
+    position: fixed;
+    top: 20vh;
+    left: 50%;
+    font-size: 14rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #000000;
+    stroke: 1px #000000;
+    color: transparent;
+}
+
+.circle-cursor{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: -32px 0 0 -32px;
+    border: 1px solid #0f1c64;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.container{
+    height: 100vh;
+}
+
+.centered-text{
+   height: 80vh;
+   align-items: center;
+   justify-content: center;
+   margin-top: 2vh;
+}
+
+.centered-text p{
+    font-size: 5rem;
+}
+
+.fa-caret-down{
+    animation-play-state: paused;
+}
+
+.fa-caret-down.animate, .fa-angle-up.animate{
+    animation: bounce 1s ease-in-out infinite;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes bounce{
+    0%{transform: translateY(0%);}
+    5.55556%{transform: translateY(0);}
+    11.11111%{transform: translateY(0);}
+    22.22222%{transform: translateY(-15px);}
+    27.77778%{transform: translateY(0);}
+    33.33333%{transform: translateY(-15px);}
+    44.44444%{transform: translateY(0);}
+    100%{transform: translateY(0);}
+}
+
+.align-items-end{
+    height: 90vh;
+}
+
+.align-items-end p{
+    font-size: 3rem;
+}
+
+.container-three{
+    height: 125vh;
+}
+
+button{
+    margin-top: 1rem;
+    padding: 0.5em 1em;
+    background: transparent;
+    border: 1px solid black;
+}
+
+a{
+    color: black;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .centered-text p{
+        font-size: 4rem;
+    }
+    .align-items-end p{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .centered-text p{
+        font-size: 3rem;
+    }
+    .align-items-end p{
+        font-size: 2rem;
+    }
+    .align-items-end{
+        height: 80vh;
+    }
+}
+
+@media (max-width: 360px) {
+    .centered-text p{
+        font-size: 2.5rem;
+    }
+    .align-items-end p{
+        font-size: 1.5rem;
+    }
+}
+
