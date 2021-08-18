@@ -102,6 +102,10 @@ a{
     text-decoration: underline;
 }
 
+img{
+    width: 200px;
+}
+
 
 @media (max-width: 768px) {
     .centered-text p{
