@@ -12,7 +12,6 @@ body{
     background-color: #FCF1F2;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    min-height: 400vh;
     overflow-x: hidden;
 }
 
@@ -41,7 +40,7 @@ body{
     pointer-events: none;
 }
 
-.container{
+.container-one{
     height: 100vh;
 }
 
@@ -106,6 +105,12 @@ img{
     width: 200px;
 }
 
+.input-field{
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (max-width: 768px) {
     .centered-text p{
@@ -124,8 +129,20 @@ img{
         font-size: 2rem;
     }
     .align-items-end{
+        height: 50vh;
+    }
+    .container-two{
+        height: 70vh;
+    }
+
+    .container-three{
         height: 80vh;
     }
+
+    .input-field{
+         height: 50vh; 
+    }
+
 }
 
 @media (max-width: 360px) {
