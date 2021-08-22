@@ -1,4 +1,4 @@
-let nameMessage = "My name is Bukola Ebikefe"
+let nameMessage = "My name is Bukola Ebikefe. Slack username: Ishtar."
 console.log(nameMessage);
 alert(nameMessage);
 
